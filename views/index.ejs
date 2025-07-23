@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>PokeDex</title>
+    <link rel="stylesheet" type="text/css" href="/styles/index.css">
+</head>
+<body>
+    <div>
+    <% pokemons.forEach(pokemon => { %>
+      <div class="pokemon">
+          <img src="<%= pokemon.image %>">
+          <p>PokeID:<%=pokemon.id %></p>
+          <h3><%= pokemon.name %></h3>
+        </a>
+        <p><%= pokemon.types.join(", ") %></p>
+      </div>
+    <% }); %>
+  </div>
+  </ul>
+</ul>
+</body>
+</html>
